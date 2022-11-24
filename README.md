@@ -1,46 +1,70 @@
-# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Rainblur Landing Page Template](https://www.tailwindtoolbox.com/templates/rainblur-landing-page)
+# Getting Started with Create React App
 
-[Rainblur Landing Page](https://www.tailwindtoolbox.com/templates/rainblur-landing-page) is an open source, dark mode and gradient based generic landing page or coming soon template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Rainblur Landing Page](https://www.tailwindtoolbox.com/templates/rainblur-landing-page.png)
+## Available Scripts
 
+In the project directory, you can run:
 
-## Getting Started
+### `npm start`
 
-Choose one of the following options to get started:
-* [Download the latest release](https://github.com/tailwindtoolbox/Rainblur-Landing-Page/archive/main.zip)
-* Clone the repo: `git clone https://github.com/tailwindtoolbox/Rainblur-Landing-Page.git`
-* Fork the repo
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Using the Template
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-The template is just a HTML file using a full CDN hosted Tailwind CSS file.
+### `npm test`
 
-To get the best out of Tailwind CSS, you need to really start customising it.
-Take a look at our [setup guide](https://www.tailwindtoolbox.com/setup) to start tweaking!
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Sites created using this template
+### `npm run build`
 
-* Add your site here :)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Bugs and Issues
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/tailwindtoolbox/Rainblur-Landing-Page//issues/new) here on GitHub.
+### `npm run eject`
 
-## Creator
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-[Tailwind Toolbox](https://www.tailwindtoolbox.com/) was created by and is maintained by **[Amrit Nagi](https://amritnagi.info/)**, Co-owner of [Astrava.Solutions](https://astrava.solutions).
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* https://twitter.com/tailwindtoolbox
-* https://twitter.com/amritnagi
-* https://github.com/tailwindtoolbox
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Tailwind Toolbox is based on the [Tailwind CSS](https://www.tailwindcss.com/) framework created by [Adam Wathan](https://twitter.com/adamwathan), [Jonathan Reinink](https://twitter.com/reinink), [David Hemphill](https://twitter.com/davidhemphill) and [Steve Schoger](https://twitter.com/steveschoger)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Copyright and License
+### Code Splitting
 
-Copyright 2018-2020 Astrava.Solutions Ltd. Code released under the MIT license.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
