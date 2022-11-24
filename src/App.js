@@ -56,7 +56,7 @@ function App() {
             <iframe className="absolute top-0 left-0 w-full h-full" width="1920" height="1080" src="https://www.youtube.com/embed/HR3Ejz2Dti4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
-          <div className="lg:w-6/12 md:w-8/12 sm:w-full mx-auto flex align-items pt-4 columns-5">
+          <div className="xl:w-7/12 lg:w-8/12 md:w-10/12 sm:w-full mx-auto flex align-items py-4 columns-5">
             <div className="w-1/5 sm:w-1/2 mr-4"><img src="img/OTM_DOXA13.png" alt='DOXA Film Festival' className="aspect-auto" /></div>
             <div className="w-1/5 sm:w-1/2 mr-4"><img src="img/OTM_hotdocs13.png" alt='HotDocs Film Festival' className="aspect-auto" /></div>
             <div className="w-1/5 sm:w-1/2 mr-4"><img src="img/OTM_LEOS13.png" alt='Leo Awards' className="aspect-auto" /></div>
@@ -71,7 +71,7 @@ function App() {
               <img className="mx-auto w-12" alt='Wall Street Bull' src="img/bull.png" />
             </div>
             <div className="sm:mt-4 flex flex-wrap items-center mt-3 text-sm text-gray-500">
-              <div className="sm:w-1/2 md:w-64">
+              <div className="sm:w-1/2 md:w-24">
                 <span className='px-2'>
                   <a id="licensing" onClick={()=>gaEventTracker('licensing')} href="https://www.journeyman.tv/film/6524/occupy-the-movie" className="mr-4 hover:underline md:mr-6">Licensing</a>
                 </span>
