@@ -29,7 +29,7 @@ function App() {
             <p className="text-bergundy text-3xl font-bold pb-8 lg:pb-6 text-center">
               Watch it on
             </p>
-            <div className="w-10/12 mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 flex justify-center md:justify-start pb-12 lg:pb-0 fade-in">
+            <div className="w-10/12 mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 justify-center md:justify-start pb-12 lg:pb-0 fade-in">
               <div className="mb-4"><a id="youtube" href="https://www.youtube.com/watch?v=p9dukgDjTEI" onClick={()=>gaEventTracker('youtube')}><img src="img/youtube.png" alt='Watch on YouTube' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
               <div className="mb-4"><a id="itunes" href="https://geo.itunes.apple.com/us/movie/occupy-the-movie/id1282499727?mt=6" onClick={()=>gaEventTracker('itunes')}><img alt='Watch on iTunes' src="img/itunes.png" className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
               <div className="mb-4"><a id="vimeo" href="https://vimeo.com/ondemand/occupythemovie" onClick={()=>gaEventTracker('vimeo')}><img src="img/vimeo.png" alt='Watch on Vimeo' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
