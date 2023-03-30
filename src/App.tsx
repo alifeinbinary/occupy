@@ -75,8 +75,8 @@ function App() {
                 <span className='px-2'>
                   <a id="licensing" onClick={()=>gaEventTracker('licensing')} href="https://www.journeyman.tv/film/6524/occupy-the-movie" className="mr-4 hover:underline md:mr-6">Licensing</a>
                 </span>
-                <span id="contact" className=" px-2">
-                  <Email className="hover:underline" email="occupythemovie@gmail.com" onClick={()=>gaEventTracker('contact')}>Contact</Email>
+                <span id="contact" className="px-2">
+                  <Email className="hover:underline" email="occupythemovie@gmail.com" subject="A message from occupythemovie.com" onClick={()=>gaEventTracker('contact')}>Contact</Email>
                 </span>
               </div>
               <div className='sm:w-1/2 md:w-48 text-right'>
