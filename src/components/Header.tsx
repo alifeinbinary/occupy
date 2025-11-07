@@ -3,21 +3,23 @@ import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 export default function Card() {
     const gaEventTracker = useAnalyticsEventTracker('Card');
     return (
-        <div className="flex flex-col w-full xl:w-2/5 text-center justify-center overflow-y-hidden sm:leading-tight md:leading-loose">
-            <div className="hero-otm p-6 md:p-8 rounded-xl shadow-lg text-white">
-                <h1 className="my-4 text-3xl md:text-5xl text-white font-bold leading-normal">
+        <header id="header" className="flex flex-col w-full xl:w-2/5 text-center justify-center overflow-y-hidden sm:leading-tight md:leading-loose">
+            <div className="hero-otm p-6 md:p-8 rounded-xl shadow-lg text-white leading-none">
+                <span className="text-lg md:text-xl">
                     Watch the award-winning documentary about the
-                    <span className="">
-                        &nbsp;Occupy Wall Street&nbsp;
-                    </span>
-                    movement
+                </span>
+                <h1 className="my-4 text-2xl md:text-5xl text-white font-bold leading-none">
+                    Occupy Wall Street
                 </h1>
-                <p className="leading-normal md:text-2xl mb-8 text-center text-red-200">
+                <span className="text-lg md:text-xl">
+                    movement
+                </span>
+                <h2 className="leading-normal md:text-2xl font-semibold py-8 text-center text-red-100">
                     When dissent is duty
-                </p>
+                </h2>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                        href="https://www.youtube.com/watch?v=p9dukgDjTEI"
+                        href="https://youtu.be/HmGZS4ac7qQ?si=mSBscL04tIyMrcmg"
                         target="_blank"
                         rel="noopener"
                         onClick={() => gaEventTracker('watch_youtube_cta')}
@@ -36,6 +38,6 @@ export default function Card() {
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }

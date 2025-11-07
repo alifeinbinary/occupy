@@ -1,6 +1,6 @@
 export default function Quotes() {
     return (
-        <section className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto py-8" id="quotes">
+        <section id="quotes" className="w-11/12 md:w-9/12 lg:w-7/12 mx-auto py-8">
             <div className="space-y-8 text-center">
                 <blockquote className="text-xl md:text-2xl font-serif text-gray-800">
                     “A complex political movement gets admirably cogent treatment in Corey Ogilvie's <span className="italic">Occupy the Movie</span>”

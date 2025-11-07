@@ -5,8 +5,8 @@ import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 export default function Watch() {
     const gaEventTracker = useAnalyticsEventTracker('Watch');
     return (
-        <div className="mx-auto md:pt-12 sm:pt-0" id="watch">
-            <p className="text-bergundy text-3xl font-bold pb-8 lg:pb-6 text-center">
+        <div id="watch" className="mx-auto md:pt-12 sm:pt-0">
+            <p className="text-bergundy text-3xl font-bold pt-8 text-center">
                 Or watch it on
             </p>
             <div className="w-full mx-auto grid grid-cols-5 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-5 justify-center md:justify-start pb-12 lg:pb-0 fade-in">
