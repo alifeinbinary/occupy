@@ -3,7 +3,7 @@ import useAnalyticsEventTracker from "../useAnalyticsEventTracker";
 export default function Card() {
     const gaEventTracker = useAnalyticsEventTracker('Card');
     return (
-        <header id="header" className="flex flex-col w-full xl:w-2/5 text-center justify-center overflow-y-hidden sm:leading-tight md:leading-loose">
+        <header id="header" className="flex flex-col w-full xl:w-2/5 text-center justify-center overflow-y-hidden sm:leading-tight md:leading-loose" role="banner">
             <div className="hero-otm p-6 md:p-8 rounded-xl shadow-lg text-white leading-none">
                 <span className="text-lg md:text-xl">
                     Watch the award-winning documentary about the
