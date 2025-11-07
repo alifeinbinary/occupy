@@ -3,6 +3,8 @@ import './App.css';
 import { Email } from "react-obfuscate-email";
 import ReactGA from 'react-ga';
 import useAnalyticsEventTracker from './useAnalyticsEventTracker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faApple, faVimeo, faAmazon, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   const TRACKING_ID = "G-C5R969J4P5";
@@ -29,7 +31,7 @@ function App() {
           <div className="flex flex-col w-full xl:w-2/5 text-center justify-center overflow-y-hidden sm:leading-tight md:leading-loose">
             <h1 className="my-4 text-3xl md:text-5xl text-black opacity-75 font-bold leading-normal">
               Watch the award-winning documentary about the
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-gray-800 to-red-300">
+              <span className="bg-clip-text text-transparent bg-linear-to-r from-red-400 via-gray-800 to-red-300">
                 &nbsp;Occupy Wall Street&nbsp;
               </span>
               movement
@@ -50,11 +52,31 @@ function App() {
               Or watch it on
             </p>
             <div className="w-10/12 mx-auto grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-2 justify-center md:justify-start pb-12 lg:pb-0 fade-in">
-              <div className="mb-4"><a id="youtube" href="https://www.youtube.com/watch?v=p9dukgDjTEI" onClick={() => gaEventTracker('youtube')}><img src="img/youtube.png" alt='Watch on YouTube' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
-              <div className="mb-4"><a id="itunes" href="https://geo.itunes.apple.com/us/movie/occupy-the-movie/id1282499727?mt=6" onClick={() => gaEventTracker('itunes')}><img alt='Watch on iTunes' src="img/itunes.png" className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
-              <div className="mb-4"><a id="vimeo" href="https://vimeo.com/ondemand/occupythemovie" onClick={() => gaEventTracker('vimeo')}><img src="img/vimeo.png" alt='Watch on Vimeo' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
-              <div className="mb-4"><a id="amazonprime" href="http://a.co/0ip1qCw" onClick={() => gaEventTracker('amazonprime')}><img src="img/amazoninstant.png" alt='Watch on Amazon Prime' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
-              <div className="mb-4"><a id="googleplay" href="https://play.google.com/store/movies/details/Occupy_The_Movie?id=p9dukgDjTEI&hl=en_GB" onClick={() => gaEventTracker('googleplay')}><img src="img/googleplay.png" alt='Watch on Google Play' className="w-56 mx-auto md:px-2 sm:px-4 sm:py-6 aspect-auto transform hover:scale-110 duration-300 ease-in-out" /></a></div>
+              <div className="mb-4">
+                <a id="youtube" aria-label="Watch on YouTube" href="https://www.youtube.com/watch?v=p9dukgDjTEI" onClick={() => gaEventTracker('youtube')} className="flex items-center justify-center md:px-2 sm:px-4 sm:py-6 transform hover:scale-110 duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faYoutube} className="text-red-600" size="6x" />
+                </a>
+              </div>
+              <div className="mb-4">
+                <a id="itunes" aria-label="Watch on Apple TV" href="https://tv.apple.com/ca/movie/occupy-the-movie/umc.cmc.5rqca6mfld6yjupka2otm5f83" onClick={() => gaEventTracker('itunes')} className="flex items-center justify-center md:px-2 sm:px-4 sm:py-6 transform hover:scale-110 duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faApple} className="text-black" size="6x" />
+                </a>
+              </div>
+              <div className="mb-4">
+                <a id="vimeo" aria-label="Watch on Vimeo" href="https://vimeo.com/ondemand/occupythemovie" onClick={() => gaEventTracker('vimeo')} className="flex items-center justify-center md:px-2 sm:px-4 sm:py-6 transform hover:scale-110 duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faVimeo} className="text-sky-600" size="6x" />
+                </a>
+              </div>
+              <div className="mb-4">
+                <a id="amazonprime" aria-label="Watch on Amazon" href="http://a.co/0ip1qCw" onClick={() => gaEventTracker('amazonprime')} className="flex items-center justify-center md:px-2 sm:px-4 sm:py-6 transform hover:scale-110 duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faAmazon} className="text-black" size="6x" />
+                </a>
+              </div>
+              <div className="mb-4">
+                <a id="googleplay" aria-label="Watch on Google Play" href="https://play.google.com/store/movies/details/Occupy_The_Movie?id=p9dukgDjTEI&hl=en_GB" onClick={() => gaEventTracker('googleplay')} className="flex items-center justify-center md:px-2 sm:px-4 sm:py-6 transform hover:scale-110 duration-300 ease-in-out">
+                  <FontAwesomeIcon icon={faGooglePlay} className="text-emerald-600" size="6x" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="xl:w-7/12 lg:w-8/12 md:w-10/12 sm:w-full mx-auto flex align-items py-4 columns-5">
@@ -68,8 +90,9 @@ function App() {
           <section className="credits justify-center w-full py-3">
             <p className="text-gray-500 text-xs text-center">An <a href="https://www.coreyogilvie.com/" className="hover:underline">Ogilvie Film</a> and <a href="https://www.strangeways.co" className="hover:underline">Strangeways Studios</a> production</p>
           </section>
-          <footer className="mt-24 sm:mt-6 p-4 w-full bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+          <footer className="mt-24 sm:mt-6 px-4 py-2 w-full bg-white rounded-lg shadow md:flex md:items-center md:justify-between">
             <div className="text-sm sm:mt-4 text-gray-500 sm:text-center">© 2022 Occupy: The Movie. <br />All Rights Reserved.
+              <p className="text-gray-500 text-xs text-center mt-2">Site made by <a href="https://www.strangeways.dev" className="hover:underline">Strangeways.dev</a></p>
             </div>
             <div className="py-6 lg:py-0">
               <img className="mx-auto w-12" alt='Wall Street Bull' src="img/bull.png" />
