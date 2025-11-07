@@ -9,21 +9,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-ga": "^3.3.1",
-    "react-obfuscate-email": "^1.1.2",
-    "tailwindcss": "^3.4.3"
+    "react-obfuscate-email": "^2.0.4",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.6.0",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.11"
-  }
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react-swc": "^4.2.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.1"
+  },
+  "packageManager": "pnpm@10.20.0"
 }
